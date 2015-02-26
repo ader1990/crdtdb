@@ -27,7 +27,7 @@ install (IMO). Grab the src tar, unzip it, have a look at the
 On Ubuntu 14.04, you must install the following dependencies:
 
     sudo apt-get install build-essential ncurses-dev libssl-dev openjdk-6-jdk xsltproc fop libxml2-utils -y
--y
+
 
 If you are on a Linux, then it should be as simple as
 
