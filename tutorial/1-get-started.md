@@ -21,8 +21,15 @@ please remove the MacPorts directories from your path.
 I strongly recommend you get R16B02 from
 <http://www.erlang.org/download.html> It is best to do a source
 install (IMO). Grab the src tar, unzip it, have a look at the
-`install.md`, and follow the instructions. If your on a Linux, then it
-should be as simple as
+`install.md`, and follow the instructions. 
+
+
+On Ubuntu 14.04, you must install the following dependencies:
+
+    sudo apt-get install build-essential ncurses-dev libssl-dev openjdk-6-jdk xsltproc fop libxml2-utils -y
+-y
+
+If you are on a Linux, then it should be as simple as
 
     ./configure --prefix=$HOME/erlang-R16B02 --disable-hipe --without-odbc
 
@@ -32,8 +39,7 @@ If on OS X then you'll also need
     ./configure --prefix=$HOME/erlang-R16B02 --enable-darwin-64bit --disable-hipe --without-odbc
 
 If `configure` complains about anything other than ODBC or FOP being
-missing, then check you have the build requirements (it needs ncurses
-dev, ssl dev, g++, things like that.) On OS X running:
+missing, then check you have the build requirements (it needs ncurses-dev, libssl-dev, g++, jdk.) On OS X running:
 
     xcode-select --install
     
